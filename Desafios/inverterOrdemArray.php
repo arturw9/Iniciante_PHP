@@ -5,9 +5,10 @@ $arrayNovo = [];
 
 echo "Array invertido: ".PHP_EOL;
 
-for($i=$tamanho-1; $i>=0; $i--){
-    $arrayNovo = $a[$i].PHP_EOL;
-    echo $arrayNovo;
+for($i=$tamanho-1; $i>=0; $i--)
+{
+    $arrayNovo[] = $a[$i];
 }
+var_dump($arrayNovo);
 
 ?>
