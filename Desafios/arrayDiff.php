@@ -4,6 +4,7 @@ $b = ["b","c", "e"];
 
 function arrayDiff($arraya, $arrayb)
 {
+
     $diferentes = [];
     foreach ($arraya as $item) {
         $i = array_search($item, $arrayb);
@@ -16,17 +17,20 @@ function arrayDiff($arraya, $arrayb)
 
     $diferentes += $arrayb;
 
+    $diferentes1 = [];
     foreach ($arrayb as $item) {
         $i = array_search($item, $arraya);
         if ($i !== false) {
             unset($arraya[$i]);
         } else {
-            $diferentes[] = $item;
+            $diferentes1[] = $item;
         }
+        $diferentes1 += $arraya;
     }
 
-    $total = $diferentes;
-    return $total;
+
+
+    return $diferentes1+$diferentes;
 }
 
 var_dump(arrayDiff($a, $b));

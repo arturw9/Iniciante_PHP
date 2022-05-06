@@ -1,9 +1,11 @@
 <?php
 $array = array("a"=>"Artur","b"=>"Fidelis","c"=>"Silva","d"=>"PHP","e"=>"PHP", "f"=>"CoderFOX");
+$a = ["a","b","c","d","d"];
+$b = ["b","c", "e"];
 $arrayNovo = []; // Array novo
 
 // Percorre cada valor do array atual
-foreach($array as $arrayItensAtual) {
+foreach($a as $arrayItensAtual) {
     // Percorre cada valor do array modificado
     foreach($arrayNovo as $arrayItensAtualModific) {
         // Verifica se o valor já existe
@@ -13,7 +15,7 @@ foreach($array as $arrayItensAtual) {
         }
     }
     // Array novo recebe cada valor unico
-    $arrayNovo[] = $arrayItensAtual;
+    $arrayNovo[] = $arrayItensAtual; // agora a varivel $b é $arrayNovo
 }
 var_dump($arrayNovo);
 ?>
