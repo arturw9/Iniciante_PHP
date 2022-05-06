@@ -28,8 +28,6 @@ function arrayDiff($arraya, $arrayb)
         $diferentes1 += $arraya;
     }
 
-
-
     return $diferentes1+$diferentes;
 }
 
