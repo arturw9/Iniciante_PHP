@@ -16,7 +16,6 @@ function arrayDiff($arraya, $arrayb)
 
     $diferentes += $arrayb;
 
-    $diferentes1 = [];
     foreach ($arrayb as $item) {
         $i = array_search($item, $arraya);
         if ($i !== false) {
