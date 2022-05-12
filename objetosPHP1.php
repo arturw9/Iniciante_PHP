@@ -16,7 +16,6 @@ class Produto {
 }
 
 $p1 = new Produto('Livro', 50);
-$p1 -> setDescricao('Livro');
-$p1 -> setPreco(50);
 var_dump($p1);
+
 //echo $p1->getDetalhes();
